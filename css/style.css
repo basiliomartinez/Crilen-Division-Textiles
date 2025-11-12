@@ -1,0 +1,15 @@
+/* Navbar más angosta en desktop */
+@media (min-width: 768px){
+  .navbar .container{
+    padding-top: .25rem;   /* antes .75rem */
+    padding-bottom: .25rem;
+  }
+  .seal img{
+    height: 58px;          /* antes 72px */
+    padding: 6px 12px;     /* mantiene formato rectangular */
+  }
+  .navbar .nav-link{
+    padding: .25rem .75rem; /* menos alto en tabs */
+    font-size: .95rem;
+  }
+}
