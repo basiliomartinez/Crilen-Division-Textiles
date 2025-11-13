@@ -19,13 +19,16 @@
     footer{flex-shrink:0; background:var(--gris-perla); border-top:1px solid var(--borde);}
     .navbar{backdrop-filter:blur(6px)}
     .seal{display:flex; align-items:center; gap:.8rem}
+    
     /* Sello CRILEN en navbar: más grande y rectangular */
+/* Logo en navbar: que se vea completo, sin marco extra */
 .seal img{
-  height: 72px;          /* antes 48px */
-  padding: 8px 14px;     /* lo hace más “rectangular” */
-  border: 2px solid #000;
-  border-radius: 12px;
-  background: #fff;
+  height: 64px;      /* podés subir o bajar este número */
+  width: auto;
+  padding: 0;
+  border: none;
+  border-radius: 0;
+  display: block;
 }
 
 /* Un poco más de alto de navbar en desktop */
@@ -51,7 +54,7 @@
   <nav class="navbar navbar-expand-md navbar-light bg-white border-bottom sticky-top">
     <div class="container py-2">
       <div class="seal">
-        <img src="./Imagenes/Logo Crilen Div Textil.jpg.png" alt="Logo Crilen" />
+        <img src="./Imagenes/Logro Negro Crilen Div Tex.png" alt="Logo Crilen"/>
       
       </div>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navTabs" aria-controls="navTabs" aria-expanded="false" aria-label="Menú">
