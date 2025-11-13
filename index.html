@@ -18,24 +18,24 @@
     main{flex:1 0 auto}
     footer{flex-shrink:0; background:var(--gris-perla); border-top:1px solid var(--borde);}
     .navbar{backdrop-filter:blur(6px)}
-    .seal{display:flex; align-items:center; gap:.8rem}
+    .seal{
+  width: 130px;              /* tamaño del “cartucho” del logo */
+  height: 70px;
+  border: 2px solid #ffffff; /* borde blanco */
+  border-radius: 16px;       /* esquinas redondeadas */
+  background: #000;          /* fondo negro */
+  overflow: hidden;          /* respeta el redondeo al recortar la imagen */
+}
 
     /* Sello CRILEN en navbar: más grande y rectangular */
 /* Logo en navbar: que se vea completo, sin marco extra */
 /* Logo en navbar CON BORDE */
 .seal img{
-  height: 64px;        /* Ajustá el tamaño acá */
-  width: auto;
+  width: 100%;
+  height: 100%;
   display: block;
-
-  /* Borde elegante */
-  border: 2px solid #ffffff;   /* borde blanco */
-  border-radius: 10px;         /* esquinas suavizadas */
-  padding: 4px;                /* espacio interno entre el borde y el logo */
-
-  background: #000;            /* mantiene el fondo negro del logo */
+  object-fit: cover;         /* hace zoom y recorta un poco los bordes negros */
 }
-
 
 /* Un poco más de alto de navbar en desktop */
 @media (min-width: 768px){
